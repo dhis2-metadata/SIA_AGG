@@ -2,4 +2,4 @@
 
 ## 1.0.0
 
-Initial release of the SIA metadata toolkit.
+Initial release of the SIA metadata toolkit
