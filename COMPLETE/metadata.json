@@ -7122,7 +7122,7 @@
         "DHIS2Build": "db15b78",
         "DHIS2Version": "2.40.2",
         "code": "SIA_AGG",
-        "description": "SIA (aggregate)",
+        "description": "Supplementary Immunization Activities (aggregate)",
         "healthAreaCode": "IMM",
         "healthAreaName": "Immunization",
         "lastUpdated": "20231215T104231",
