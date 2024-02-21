@@ -3,7 +3,7 @@
 ## Supplementary Immunization Activities
 
 The metadata and the dashboard of the Supplementary Immunization Activities (SIA) follow the principles and suggestions indicated in the [Design](#imm-vc-design) chapter of the [Vaccination Campaigns](https://docs.dhis2.org/en/topics/metadata/immunization/vaccination-campaigns/overview.html) documentation.
-The example outlined in this chapter is a fictional Supplementary Immunization Activity for MR carried out during March 2023 in the north of the country as seen in the **SIA MR (2303) dashboard** in the [HMIS Demo](https://demos.dhis2.org/hmis) instance. The metadata for this example has been designed based on the examples provided by countries’ implementations, and the key recommendations outlined in the [DHIS2 Immunization Campaigns documentation](https://docs.dhis2.org/en/topics/metadata/immunization/vaccination-campaigns/overview.html) and the Joint GAVI/UNICEF guidance on “[Planning and Implementing Real-time Monitoring Approaches to Strengthen Vaccination Campaigns”](https://www.gavi.org/sites/default/files/evaluations/Planning-Implementing-RTM-Approaches-Strengthen-Vaccination-Campaigns.pdf).
+The example outlined in this chapter is a fictional Supplementary Immunization Activity for MR carried out during March of the current year in the north of the country as seen in the **EPI-SIA - MR Campaign (2024-03) dashboard** in the [HMIS Demo](https://demos.dhis2.org/hmis) instance. The metadata for this example has been designed based on the examples provided by countries’ implementations, and the key recommendations outlined in the [DHIS2 Immunization Campaigns documentation](https://docs.dhis2.org/en/topics/metadata/immunization/vaccination-campaigns/overview.html) and the Joint GAVI/UNICEF guidance on “[Planning and Implementing Real-time Monitoring Approaches to Strengthen Vaccination Campaigns”](https://www.gavi.org/sites/default/files/evaluations/Planning-Implementing-RTM-Approaches-Strengthen-Vaccination-Campaigns.pdf).
 The campaign in this case targets two population groups defined by age (children between 6-23 months, and children between 24-59 years) and by the distance from the health facility (0-5 km, 6-15 km, and 15+ km). The distance in this case is translated into the different types of vaccination delivery sites available in the distribution plan - 0-5 km = Fixed site, 6-15 km = Advanced site, 15+ km = Mobile site.
 
 ### SIA Data Sets
@@ -12,11 +12,11 @@ The metadata for SIA is distributed in three datasets:
 
 | Name     | Periodicity | Description   |
 |---------|-------------|---------|
-| **SIA - MR Vaccine delivery - (MR2303)** | Daily       | Contains the basic information to be collected during a vaccine distribution: doses by the desired disaggregations (age, sex, type of distribution site, etc), AEFIs, and vaccinating staff. |
-| **SIA - Stock MR Campaign (MR2303)**     | Daily       | Contains the items from the medical stock needed for the campaign.     |
-| **SIA - MR Campaign targets (MR2303)**   | Yearly      | Defines the target population of the campaign.  
+| **EPI-SIA - MR Vaccine delivery - (MR2024-03)** | Daily       | Contains the basic information to be collected during a vaccine distribution: doses by the desired disaggregations (age, sex, type of distribution site, etc), AEFIs, and vaccinating staff. |
+| **EPI-SIA - Stock MR Campaign (MR2024-03)**     | Daily       | Contains the items from the medical stock needed for the campaign.     |
+| **EPI-SIA - MR Campaign targets (MR2024-03)**   | Yearly      | Defines the target population of the campaign.  
 
-The naming convention using "**(MR2303)**" labels a fictional MR (Measles Rubella) campaign that took place in March 2023. MR2303 is therefore just a suggestion of a clear and organized way to label datasets - provides context and allows users and implementers to understand when the data was collected or associated with a specific event.
+The naming convention using "**(MR2024-03)**" labels a fictional MR (Measles Rubella) campaign that took place in March 2024. MR2020-03 is therefore just a suggestion of a clear and organized way to label datasets - provides context and allows users and implementers to understand when the data was collected or associated with a specific event.
 Being nothing but an example, it's essential for users and implementers to agree on a locally meaningful way to adapt the coding and naming conventions according to their local practices and guidance. Flexibility in naming conventions allows datasets to be more meaningful and relevant to specific projects and contexts.
 
 ### Metadata for SIA Real Time Monitoring
@@ -60,7 +60,7 @@ It should be noted that, in this case, the vaccination delivery and the populati
 
 ### Data Analysis and Dashboard
 
-The dashboard for the SIA (**SIA MR (2303**)) proposes the core visualizations for the analysis and monitoring in real time of the campaign’s progress.
+The dashboard for the SIA (**EPI-SIA - MR Campaign (2024-03)**) proposes the core visualizations for the analysis and monitoring in real time of the campaign’s progress.
 
 ![SIA MR (2303) dashboard](resources/images/SIA_SDG_009.png)
 
@@ -68,13 +68,13 @@ The table below highlights important considerations for some of the visualizatio
 
 | Name        | Type         | Comments     |
 |---------|--------------|----------|
-| SIA_MR2303_011 Doses total           | Single value | This next to the target population (SIA_MR2303_007 Population) will highlight any discrepancy.    |
-| SIA_MR2303_003 Coverage              | Single value | Overall campaign coverage or disaggregated by age groups (SIA_MR2303_012 Coverage 24-59 and SIA_MR2303_013 Coverage 6-23).<br> Assign the legend “MR coverage” to appoint a colour code to the value based on the set thresholds.    |
-| SIA_MR2303_001 Population            | Pivot table  | Use the disaggregations of the population to provide a summary of the population reached.           |
-| SIA_MR2303_008 Coverage map          | Map          | Choropleth map with the coverage by district. Assign the legend “MR coverage” to appoint a colour code to the value of each district (or any other administrative level of relevance) based on the set thresholds.   |
-| SIA_MR2303_010 Doses coverage        | Double axes  | The cumulative graph will provide an overview of the progress of the campaign both in terms of doses distributed and of coverage of the target population.   |
-| SIA_MR2303_004 Coverage by age       | Line         | Cumulative trendline of the coverage by age groups (or any other relevant disaggregation). Particularly useful to spot any underestimated population group.<br> A cumulative column graph on the doses distributed by age groups (SIA_MR2303_005 Doses cumulative age) can accompany the coverage trends alongside the “SIA_MR2303_027 Vacci distribution” summary table. |
-| SIA_MR2303_018 Staff discrepancy map | Map          | The map is the geographic representation of the table “SIA_MR2303_014 Staff discrepancy”. As explained in the text box, the discrepancy should be interpreted as : Positive number -> Staff available>Staff expected, Negative number -> Staff available<Staff expected, 0-> Staff available= staff expected.   |
+| SIA_MR2024-03_011 Doses total           | Single value | This next to the target population (SIA_MR2024-03_007 Population) will highlight any discrepancy.    |
+| SIA_MR2024-03_003 Coverage              | Single value | Overall campaign coverage or disaggregated by age groups (SIA_MR2024-03_012 Coverage 24-59 and SIA_MR2303_013 Coverage 6-23).<br> Assign the legend “MR coverage” to appoint a colour code to the value based on the set thresholds.    |
+| SIA_MR2024-03_001 Population            | Pivot table  | Use the disaggregations of the population to provide a summary of the population reached.           |
+| SIA_MR2024-03_008 Coverage map          | Map          | Choropleth map with the coverage by district. Assign the legend “MR coverage” to appoint a colour code to the value of each district (or any other administrative level of relevance) based on the set thresholds.   |
+| SIA_MR2024-03_010 Doses coverage        | Double axes  | The cumulative graph will provide an overview of the progress of the campaign both in terms of doses distributed and of coverage of the target population.   |
+| SIA_MR2024-03_004 Coverage by age       | Line         | Cumulative trendline of the coverage by age groups (or any other relevant disaggregation). Particularly useful to spot any underestimated population group.<br> A cumulative column graph on the doses distributed by age groups (SIA_MR2024-03_005 Doses cumulative age) can accompany the coverage trends alongside the “SIA_MR2024-03_027 Vacci distribution” summary table. |
+| SIA_MR2024-03_018 Staff discrepancy map | Map          | The map is the geographic representation of the table “SIA_MR2303_014 Staff discrepancy”. As explained in the text box, the discrepancy should be interpreted as : Positive number -> Staff available>Staff expected, Negative number -> Staff available<Staff expected, 0-> Staff available= staff expected.   |
 
 ## Rapid Convenience Monitoring for SIAs
 
