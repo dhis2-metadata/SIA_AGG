@@ -60,7 +60,7 @@ It should be noted that, in this case, the vaccination delivery and the populati
 
 ### Data Analysis and Dashboard
 
-The dashboard for the SIA (**EPI-SIA - MR Campaign (2024-03)**) proposes the core visualizations for the analysis and monitoring in real time of the campaign’s progress.
+The metadata package of the solutions outlined in this document is not available for download because it is highly dependent on the type of design chosen for the campaign and on the local configuration of the EPI metadata. The dashboard for the SIA (EPI-SIA - MR Campaign (2024-03)) available on the [HMIS Demo instance](https://demos.dhis2.org/hmis) proposes the core visualizations for the analysis and monitoring in real-time of the campaign’s progress and can be used as an example or source of inspiration for local customizations and adaptation
 
 ![SIA MR (2303) dashboard](resources/images/SIA_SDG_009.png)
 
