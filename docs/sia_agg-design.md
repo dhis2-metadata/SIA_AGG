@@ -25,7 +25,7 @@ The metadata for the mock MR campaign is available in the metadata reference fil
 
 #### Vaccine Delivery Data Set
 
-The vaccine delivery dataset contains the core information to be collected during a campaign as outlined in the [Design chapter](https://docs.dhis2.org/en/topics/metadata/immunization/vaccination-campaigns/design.html#imm-vc-design)(System Design Overview section) of the [Vaccination Campaigns](https://docs.dhis2.org/en/topics/metadata/immunization/vaccination-campaigns/overview.html) documentation.
+The vaccine delivery dataset contains the core information to be collected during a campaign as outlined in the [Design chapter](https://docs.dhis2.org/en/topics/metadata/immunization/vaccination-campaigns/design.html#imm-vc-design) (System Design Overview section) of the [Vaccination Campaigns](https://docs.dhis2.org/en/topics/metadata/immunization/vaccination-campaigns/overview.html) documentation.
 
 The doses of vaccine distributed were disaggregated by site and by age group. The CatCombo here is just an example and can be easily changed according to the needs of the implementation.
 
