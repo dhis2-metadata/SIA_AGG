@@ -21,7 +21,7 @@ Being nothing but an example, it's essential for users and implementers to agree
 
 ### Metadata for SIA Real Time Monitoring
 
-The metadata for the mock MR campaign is available in the [downloadable SIA flat file](resources/Metadata Flat File_SIA.xlsx). The file can be recycled and reused as many times as necessary just by replacing the UIDs of the metadata, and the vaccine used (in this case MR) with the vaccine(s) needed for the campaign that needs to be configured. The exception applies to the population DE, which belongs to the [common metadata library](https://docs.dhis2.org/en/topics/metadata/dhis2-who-digital-health-data-toolkit/common-metadata-library/design.html), unless ad hoc population data points need to be configured for the purpose of defining with more detail the campaign’s denominators.
+The metadata for the mock MR campaign is available in the metadata reference file which is available in the [Metadata Downloads](https://dhis2.org/metadata-downloads) section. The file can be recycled and reused as many times as necessary just by replacing the UIDs of the metadata, and the vaccine used (in this case MR) with the vaccine(s) needed for the campaign that needs to be configured. The exception applies to the population DE, which belongs to the [common metadata library](https://docs.dhis2.org/en/topics/metadata/dhis2-who-digital-health-data-toolkit/common-metadata-library/design.html), unless ad hoc population data points need to be configured for the purpose of defining with more detail the campaign’s denominators.
 
 #### Vaccine Delivery Data Set
 
